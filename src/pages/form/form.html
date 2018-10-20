@@ -1,0 +1,41 @@
+<ion-header>
+    <ion-navbar>
+      <ion-title>
+        Ionic IFSP 2018 - Form
+      </ion-title>
+    </ion-navbar>
+  </ion-header>
+
+  <ion-content padding>
+    <ion-item>
+        <ion-label>Nome</ion-label>
+        <ion-input type="text" [(ngModel)]="aluno.nome" name="nome"></ion-input>
+    </ion-item>
+
+    <ion-item>
+        <ion-label>Sobrenome</ion-label>
+        <ion-input type="text" [(ngModel)]="aluno.sobrenome" name="sobrenome"></ion-input>
+    </ion-item>
+
+    <ion-item>
+        <ion-label>Sexo</ion-label>
+        <ion-select [(ngModel)]="aluno.sexo" name="sexo">
+            <ion-option value="m">Masculino</ion-option>
+            <ion-option value="f">Feminino</ion-option>
+        </ion-select>
+    </ion-item>
+
+    <ion-item>
+        <ion-label>Idade</ion-label>
+        <ion-input type="number" [(ngModel)]="aluno.idade" name="idade"></ion-input>
+    </ion-item>
+
+    <ion-item>
+        <ion-label>Telefone</ion-label>
+        <ion-input type="tel" [(ngModel)]="aluno.telefone" name="telefone"></ion-input>
+    </ion-item>
+    
+    <button ion-button color="danger" (click)="cancelarCadastro()">Cancelar</button>
+    <button ion-button color="secondary" (click)="confirmarCadastro()">Cadastrar</button>
+  </ion-content>
+  
