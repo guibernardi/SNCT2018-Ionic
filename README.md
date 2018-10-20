@@ -54,13 +54,15 @@ Projeto para introdução ao framework Ionic que faz parte do conteúdo do minic
 * Executar dentro do diretório do projeto:
 
 	`npm i -g ionic`
-	`npm i @ionic/lab`
+  
+  `npm i @ionic/lab`
 
 ## Incluindo plataformas (Android/iOS):
 
 * Executar dentro do diretório do projeto:
 
 	`ionic cordova platform add android`
-	`ionic cordova platform add ios`
+  
+  `ionic cordova platform add ios`
 	
 Qualquer dúvida entrar em contato: gui.bernardi@gmail.com
